@@ -13,7 +13,12 @@ lc0002←{⍎¨⌽⍕10⊥+⌿⌽↑⍺ ⍵}
 ⍝ -321
 lc0007←{((1 ¯1)[1+⍵<0])×⍎⌽⍕|⍵}
 
-⍝ LeetCode 0035
+⍝ LeetCode 0034 Find First and Last Position of Element in Sorted Array
+⍝ 8 lc0034 5 7 7 8 8 10
+⍝ 4 5
+lc0034←{0=+/⍺⍷⍵: ¯1,¯1 ⋄ ((1↑⊢),¯1↑⊢)(⍺=⍵)/⍳≢⍵}
+
+⍝ LeetCode 0035 Search Insert Position
 ⍝ 2 lc0035 1 3 5 6
 ⍝ 1
 lc0035←{+/⍺>⍵}
